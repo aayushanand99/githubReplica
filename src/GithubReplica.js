@@ -111,6 +111,7 @@ class GithubReplica extends Component{
                              style={styles.searchInput}
                              onChangeText={(text)=>this.searchUsed(text)}
                              value={this.state.searchText}
+                             placeholder="Repository name"
                              />
                         }
                         </View>
@@ -124,7 +125,7 @@ const styles=StyleSheet.create({
     container:{
         height:'100%',
         width:'100%',
-        backgroundColor:'red'
+        // backgroundColor:'red'
     },
     topArea:{
         flex:2,
@@ -164,7 +165,7 @@ const styles=StyleSheet.create({
         width:40,
         borderRadius:20,
        
-        backgroundColor:'#89cff0',
+        backgroundColor:'#24292d',
         alignItems:'center',
         justifyContent:'center'
     },
@@ -172,7 +173,8 @@ const styles=StyleSheet.create({
         height:40,
         width:'80%',
         backgroundColor:'white',
-        borderWidth:1
+        borderWidth:1,
+        paddingLeft:10
     }
 })
 function mapStateToProps(state) {
